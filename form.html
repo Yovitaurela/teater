@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Payment Form</h2>
+        <form action="#" method="POST">
+            <!-- Nama Lengkap -->
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+
+            <!-- Gmail -->
+            <div class="form-group">
+                <label for="email">Gmail:</label>
+                <input type="email" id="email" name="email" placeholder="yourname@gmail.com" required>
+            </div>
+
+            <!-- Nomor HP -->
+            <div class="form-group">
+                <label for="phone">Nomor HP:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10,13}" required>
+            </div>
+
+            <!-- Alat Pembayaran -->
+            <div class="form-group">
+                <label for="payment">Alat Pembayaran:</label>
+                <select id="payment" name="payment" required>
+                    <option value="bri">Bank BRI</option>
+                    <option value="bni">Bank BNI</option>
+                    <option value="bca">Bank BCA</option>
+                    <option value="mandiri">Bank Mandiri</option>
+                    <option value="gopay">GoPay</option>
+                    <option value="ovo">OVO</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
